@@ -6,7 +6,7 @@
 
     <About />
 
-    <Approach />
+    <Interior />
 
     <Indications />
 

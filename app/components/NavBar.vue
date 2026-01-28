@@ -36,10 +36,6 @@ const navItems = [
     href: '#about',
   },
   {
-    label: 'Approach',
-    href: '#approach',
-  },
-  {
     label: 'Indications',
     href: '#indications',
   },
