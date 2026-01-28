@@ -1,7 +1,7 @@
 <template>
   <section
     :id="props.id"
-    :class="cn('py-20 px-8', props.class)"
+    :class="cn('pb-20 px-24', props.class)"
   >
     <Heading
       tag="h3"

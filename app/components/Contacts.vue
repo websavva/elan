@@ -1,15 +1,24 @@
 <template>
-  <PageSection id="contacts" title="Contacts">
+  <PageSection
+    id="contacts"
+    title="Contacts"
+  >
     <div class="flex gap-12">
-      <GoogleMap class="rounded-2xl overflow-hidden border border-secondary/20 w-[60%] aspect-video shadow-xl shadow-black/20"/>
+      <GoogleMap
+        class="rounded-2xl overflow-hidden border border-secondary/20 w-[60%] aspect-video shadow-xl shadow-black/20"
+      />
 
       <aside
         class="flex-1 min-w-0 min-h-[320px] rounded-2xl border border-secondary/20 overflow-hidden flex flex-col bg-primary"
       >
-        <h4 class="text-secondary font-light text-xl sm:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20">
+        <h4
+          class="text-secondary font-light text-xl sm:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20"
+        >
           Contact information
         </h4>
-        <ul class="flex flex-col divide-y divide-secondary/15 flex-1">
+        <ul
+          class="flex flex-col divide-y divide-secondary/15 flex-1"
+        >
           <li
             v-for="(item, index) in contactInfoItems"
             :key="index"
@@ -17,17 +26,28 @@
           >
             <a
               :href="item.href"
-              :target="isExternal(item.href) ? '_blank' : undefined"
-              :rel="isExternal(item.href) ? 'noopener noreferrer' : undefined"
+              :target="
+                isExternal(item.href) ? '_blank' : undefined
+              "
+              :rel="
+                isExternal(item.href)
+                  ? 'noopener noreferrer'
+                  : undefined
+              "
               class="flex items-center gap-5 px-8 py-6 hover:bg-secondary/5 transition-colors duration-300 w-full min-h-18"
             >
               <span
                 class="flex shrink-0 w-12 h-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary/70 group-hover:bg-secondary/15 group-hover:text-secondary transition-colors duration-300"
                 aria-hidden
               >
-                <Icon :name="item.icon" class="w-6 h-6" />
+                <Icon
+                  :name="item.icon"
+                  class="text-2xl"
+                />
               </span>
-              <span class="text-secondary font-light text-base sm:text-lg leading-relaxed group-hover:text-secondary/95 transition-colors">
+              <span
+                class="text-secondary font-light text-base sm:text-lg leading-relaxed group-hover:text-secondary/95 transition-colors"
+              >
                 {{ item.value }}
               </span>
             </a>
@@ -35,10 +55,10 @@
         </ul>
 
         <Button
-        :href="bookingUrl"
-        class="w-full justify-center text-base sm:text-lg p-6 rounded-none rounded-bl-2xl border-br-2xl text-center"
+          :href="bookingUrl"
+          class="w-full justify-center text-base sm:text-lg p-6 rounded-none rounded-bl-2xl border-br-2xl text-center"
         >
-        Book an appointment
+          Book an appointment
         </Button>
       </aside>
     </div>
@@ -47,7 +67,10 @@
 
 <script setup lang="ts">
 function isExternal(href: string) {
-  return href.startsWith('http://') || href.startsWith('https://');
+  return (
+    href.startsWith('http://') ||
+    href.startsWith('https://')
+  );
 }
 
 const bookingUrl = 'mailto:info@example.com';

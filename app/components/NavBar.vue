@@ -54,6 +54,7 @@ function onScroll() {
 }
 
 onMounted(() => {
+  onScroll();
   window.addEventListener('scroll', onScroll);
 });
 
