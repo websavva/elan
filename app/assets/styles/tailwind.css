@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+
+@theme {
+  --font-display: 'Noto Sans JP', 'Arial', 'sans-serif';
+  --font-sans: 'Noto Sans JP', 'Arial', 'sans-serif';
+  --font-family-serif: 'Noto Sans JP', 'Georgia', serif;
+  --color-primary: #2e2823;
+  --color-secondary: #dadace;
+}
+
+body {
+  @apply bg-primary text-secondary;
+}
