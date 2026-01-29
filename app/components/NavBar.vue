@@ -2,7 +2,7 @@
   <nav
     :class="
       cn(
-        'flex items-center py-6 px-8 sm:px-10 lg:px-16 xl:px-24 fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-transparent max-md:py-4',
+        'flex items-center py-6 px-8 sm:px-10 lg:px-16 xl:px-24 fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b border-transparent max-md:py-4 h-nav-bar-height',
         {
           'bg-primary text-secondary border-secondary/50':
             isScrolled,
@@ -31,6 +31,8 @@
       >
         <NuxtLink :to="item.href">{{ item.label }}</NuxtLink>
       </li>
+
+      <SwitchLocaleButton />
     </ul>
 
     <!-- Mobile: overlay -->
@@ -48,13 +50,13 @@
     <aside
       :class="
         cn(
-          'lg:hidden fixed top-0 left-0 w-75 h-full bg-primary text-secondary z-50 flex flex-col transition-all duration-300 max-sm:border-r max-sm:border-secondary/20',
+          'lg:hidden fixed max-h-dvh overflow-y-auto top-0 left-0 w-75 h-full bg-primary text-secondary z-50 flex flex-col transition-all duration-300 max-sm:border-r max-sm:border-secondary/20',
           { '-translate-x-full opacity-0 pointer-events-none': !isMobileMenuOpen },
         )
       "
     >
       <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-secondary/15">
-        <span class="text-sm font-medium tracking-widest uppercase text-secondary/60">Menu</span>
+        <span class="text-sm font-medium tracking-widest uppercase text-secondary/60">{{ $t('navBar.menu') }}</span>
         <button
           type="button"
           class="p-1 -m-1"
@@ -77,15 +79,17 @@
             {{ item.label }}
           </NuxtLink>
         </li>
+
+        <SwitchLocaleButton class="w-full" />
       </ul>
       <div class="px-8 py-8 border-t border-secondary/15">
-        <NuxtLink
-          to="#contacts"
+        <a
+          :href="bookingUrl"
           class="inline-block text-sm font-medium text-secondary/70 hover:text-secondary transition-colors"
           @click="closeMobileMenu"
         >
-          Book an appointment →
-        </NuxtLink>
+          {{ $t('bookAppointment') }} →
+        </a>
       </div>
     </aside>
   </nav>
@@ -107,24 +111,28 @@ function closeMobileMenu() {
   isMobileMenuOpen.value = false;
 }
 
-const navItems = [
+const $t = useI18nTranslation();
+
+const navItems = computed(() => [
   {
-    label: 'About',
+    label: $t('navBar.about'),
     href: '#about',
   },
   {
-    label: 'Indications',
+    label: $t('navBar.indications'),
     href: '#indications',
   },
   {
-    label: 'Interior',
+    label: $t('navBar.interior'),
     href: '#interior',
   },
   {
-    label: 'Contacts',
+    label: $t('navBar.contacts'),
     href: '#contacts',
   },
-];
+]);
+
+const bookingUrl = useAppointmentUrl();
 
 function onScroll() {
   isScrolled.value = window.scrollY > 0;

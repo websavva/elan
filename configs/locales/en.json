@@ -1,9 +1,77 @@
 {
+  "bookAppointment": "Book an appointment",
+  "bookingMessage": "Hello, I would like to book an appointment for a Manual Lymphatic Drainage session. Thank you.",
+
   "navBar": {
+    "menu": "Menu",
     "about": "About",
-    "techniqes": "Techniques",
-    "testimonials": "Testimonials",
+    "indications": "Indications",
     "interior": "Interior",
     "contacts": "Contacts"
+  },
+
+  "intro": {
+    "subtitle": "Manual Lymphatic Drainage",
+    "description": "A gentle manual treatment to support lymphatic circulation, lighten the body and promote a feeling of harmony and lightness."
+  },
+
+  "about": {
+    "title": "About the technique",
+    "description": "Manual Lymphatic Drainage (MLD) is a gentle, rhythmic technique that supports lymph flow, natural drainage, and a sense of lightness in the body.",
+    "pressure": {
+      "title": "Pressure",
+      "description": "Light and precise—to encourage flow without compressing the vessels."
+    },
+    "rhythm": {
+      "title": "Rhythm",
+      "description": "Steady and calming, so the session is both effective and relaxing."
+    },
+    "duration": {
+      "title": "Duration",
+      "description": "60 to 90 minutes; most people feel lighter and more at ease afterwards."
+    },
+    "details": "The work follows the direction of lymphatic vessels, often starting at the neck to open the main drainage areas. The goal is to support the body’s own capacity to drain, detoxify and regenerate—with gentleness and precision."
+  },
+  "indications": {
+    "title": "Indications",
+    "items": [
+      {
+        "title": "Feeling of heaviness",
+        "description": "Gentle techniques to ease tension and support a sense of lightness in the body."
+      },
+      {
+        "title": "Water retention",
+        "description": "Stimulation of lymph flow to support natural drainage and reduce fluid retention."
+      },
+      {
+        "title": "Edema",
+        "description": "Careful, targeted work to support circulation and comfort in affected areas."
+      },
+      {
+        "title": "Fatigue, stress",
+        "description": "Calming, rhythmic movements to help restore balance and ease stress."
+      },
+      {
+        "title": "Post-operative support",
+        "description": "As medically indicated, to support healing and recovery after surgery."
+      }
+    ]
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "infoTitle": "Contact information",
+    "items": [
+      { "value": "Espace Anahata, Avenue de la Gare 1, 1700 Fribourg, Switzerland" },
+      { "value": "+(41) 78 216 03 86" },
+      { "value": "info@example.com" }
+    ]
+  },
+
+  "interior": {
+    "title": "Interior",
+    "spaceTitle": "The space",
+    "paragraph1": "Sessions take place at Espace Anahata in Fribourg—a calm, discreet environment designed for rest and recovery.",
+    "paragraph2": "The practice room is kept clean and quiet so you can fully let go. Natural light and a neutral setting help create a sense of ease from the moment you arrive."
   }
 }

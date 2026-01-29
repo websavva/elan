@@ -1,3 +1,78 @@
 {
-    ""
+  "bookAppointment": "Réserver un rendez-vous",
+  "bookingMessage": "Bonjour, je souhaiterais prendre rendez-vous pour une séance de drainage lymphatique manuel. Merci.",
+
+  "navBar": {
+    "menu": "Menu",
+    "about": "À propos",
+    "indications": "Indications",
+    "interior": "Intérieur",
+    "contacts": "Contacts"
+  },
+
+  "intro": {
+    "subtitle": "Drainage lymphatique manuel",
+    "description": "Un soin manuel doux pour soutenir la circulation lymphatique, alléger le corps et favoriser une sensation d’harmonie et de légèreté"
+  },
+
+  "about": {
+    "title": "À propos de la technique",
+    "description": "Le Drainage lymphatique manuel (DLM) est une technique manuelle douce et rythmée qui soutient le flux lymphatique, la drainage naturel et une sensation de légèreté dans le corps.",
+    "pressure": {
+      "title": "Pression",
+      "description": "Légère et précise—pour encourager le flux sans compresser les vaisseaux."
+    },
+    "rhythm": {
+      "title": "Rythme",
+      "description": "Régulier et calme, pour que la séance soit à la fois efficace et relaxante."
+    },
+    "duration": {
+      "title": "Durée",
+      "description": "60 à 90 minutes; la plupart des gens se sentent plus légers et plus en confiance après la séance."
+    },
+    "details": "Le travail suit la direction des vaisseaux lymphatiques, souvent en commençant au cou pour ouvrir les zones de drainage principales. L’objectif est de soutenir la capacité du corps à drainer, détoxifier et se régénérer—avec douceur et précision."
+  },
+
+  "indications": {
+    "title": "Indications",
+    "items": [
+      {
+        "title": "Sensation de lourdeur",
+        "description": "Techniques douces pour soulager les tensions et favoriser une sensation de légèreté dans le corps."
+      },
+      {
+        "title": "Rétention d’eau",
+        "description": "Stimulation du flux lymphatique pour favoriser le drainage naturel et réduire la rétention d’eau."
+      },
+      {
+        "title": "Œdème",
+        "description": "Travail soigneux et ciblé pour soutenir la circulation et le confort dans les zones concernées."
+      },
+      {
+        "title": "Fatigue, stress",
+        "description": "Mouvements calmes et rythmés pour retrouver l’équilibre et apaiser le stress."
+      },
+      {
+        "title": "Suivi post-opératoire",
+        "description": "Selon indication médicale, pour soutenir la guérison et la récupération après une intervention."
+      }
+    ]
+  },
+
+  "contacts": {
+    "title": "Contact",
+    "infoTitle": "Coordonnées",
+    "items": [
+      { "value": "Espace Anahata, Avenue de la Gare 1, 1700 Fribourg, Suisse" },
+      { "value": "+(41) 78 216 03 86" },
+      { "value": "info@example.com" }
+    ]
+  },
+
+  "interior": {
+    "title": "Intérieur",
+    "spaceTitle": "Le lieu",
+    "paragraph1": "Les séances ont lieu à l’Espace Anahata à Fribourg—un environnement calme et discret conçu pour le repos et la récupération.",
+    "paragraph2": "La salle de soin est maintenue propre et au calme pour que vous puissiez vous laisser aller. La lumière naturelle et un cadre neutre contribuent à une sensation de bien-être dès votre arrivée."
+  }
 }

@@ -1,17 +1,17 @@
 <template>
-  <PageSection id="interior" title="Interior">
+  <PageSection id="interior" :title="$i18n.t('interior.title')">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full items-start">
       <aside class="w-[30%] shrink-0  overflow-hidden bg-primary max-lg:w-full">
         <h4 class="text-secondary font-light text-xl sm:text-2xl uppercase tracking-wide py-5 border-b border-secondary/20">
-          The space
+          {{ $i18n.t('interior.spaceTitle') }}
         </h4>
-        
+
         <div class="py-4 space-y-5">
           <p class="text-secondary/90 font-light text-base sm:text-lg leading-relaxed">
-            Sessions take place at Espace Anahata in Fribourg—a calm, discreet environment designed for rest and recovery.
+            {{ $i18n.t('interior.paragraph1') }}
           </p>
           <p class="text-secondary/70 font-light text-sm sm:text-base leading-relaxed">
-            The practice room is kept clean and quiet so you can fully let go. Natural light and a neutral setting help create a sense of ease from the moment you arrive.
+            {{ $i18n.t('interior.paragraph2') }}
           </p>
         </div>
       </aside>

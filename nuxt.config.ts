@@ -19,4 +19,20 @@ export default defineNuxtConfig({
       icons: ['mdi:location-on', 'mdi:mail', 'mdi:phone'],
     },
   },
+
+  i18n: {
+    defaultLocale: 'fr',
+    locales: [
+      {
+        code: 'fr',
+        name: 'Français',
+        file: 'configs/locales/fr.json',
+      },
+      {
+        code: 'en',
+        name: 'English',
+        file: 'configs/locales/en.json',
+      },
+    ],
+  },
 });

@@ -1,7 +1,7 @@
 <template>
   <PageSection
     id="contacts"
-    title="Contacts"
+    :title="$i18n.t('contacts.title')"
   >
     <div class="flex gap-12 max-2xl:flex-col">
       <GoogleMap
@@ -14,7 +14,7 @@
         <h4
           class="text-secondary font-light text-lg lg:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20 max-sm:py-4"
         >
-          Contact information
+          {{ $i18n.t('contacts.infoTitle') }}
         </h4>
         <ul
           class="flex flex-col divide-y divide-secondary/15 flex-1"
@@ -59,7 +59,7 @@
           :href="bookingUrl"
           class="w-full justify-center text-base sm:text-lg p-6 rounded-none rounded-bl-2xl rounded-br-2xl text-center max-sm:py-4"
         >
-          Book an appointment
+          {{ $i18n.t('bookAppointment') }}
         </Button>
       </aside>
     </div>
@@ -74,24 +74,19 @@ function isExternal(href: string) {
   );
 }
 
+const { t } = useI18n();
 const bookingUrl = 'mailto:info@example.com';
 
-const contactInfoItems = [
-  {
-    icon: 'mdi:location-on',
-    value:
-      'Espace Anahata, Avenue de la Gare 1, 1700 Fribourg, Switzerland',
-    href: 'https://maps.app.goo.gl/8LZopCp3bvACvpQR7',
-  },
-  {
-    icon: 'mdi:phone',
-    href: 'tel:+41782160386',
-    value: '+(41) 78 216 03 86',
-  },
-  {
-    icon: 'mdi:mail',
-    href: 'mailto:info@example.com',
-    value: 'info@example.com',
-  },
+const contactConfig = [
+  { icon: 'mdi:location-on', href: 'https://maps.app.goo.gl/8LZopCp3bvACvpQR7' },
+  { icon: 'mdi:phone', href: 'tel:+41782160386' },
+  { icon: 'mdi:mail', href: 'mailto:info@example.com' },
 ];
+
+const contactInfoItems = computed(() =>
+  contactConfig.map((item, i) => ({
+    ...item,
+    value: (t('contacts.items') as { value: string }[])[i]?.value ?? '',
+  })),
+);
 </script>
