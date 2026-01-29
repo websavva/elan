@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    define: {
+      'process.env.BASE_URL': JSON.stringify(
+        process.env.BASE_URL ?? 'http://localhost:3000',
+      ),
+    },
+  },
+
   i18n: {
     defaultLocale: 'fr',
     locales: [

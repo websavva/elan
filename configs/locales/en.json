@@ -2,6 +2,14 @@
   "bookAppointment": "Book an appointment",
   "bookingMessage": "Hello, I would like to book an appointment for a Manual Lymphatic Drainage session. Thank you.",
 
+  "seo": {
+    "title": "Victoria Bersert | Manual Lymphatic Drainage – Fribourg",
+    "description": "Manual Lymphatic Drainage (MLD) in Fribourg. Gentle, rhythmic sessions to support lymph flow, ease tension and promote a sense of lightness. Book an appointment.",
+    "keywords": "manual lymphatic drainage, MLD, Fribourg, lymph drainage, Victoria Bersert, wellness, edema, water retention",
+    "siteName": "Victoria Bersert – Manual Lymphatic Drainage",
+    "imageAlt": "Victoria Bersert – Manual Lymphatic Drainage, Fribourg"
+  },
+
   "navBar": {
     "menu": "Menu",
     "about": "About",

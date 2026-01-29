@@ -2,6 +2,14 @@
   "bookAppointment": "Réserver un rendez-vous",
   "bookingMessage": "Bonjour, je souhaiterais prendre rendez-vous pour une séance de drainage lymphatique manuel. Merci.",
 
+  "seo": {
+    "title": "Victoria Bersert | Drainage lymphatique manuel – Fribourg",
+    "description": "Drainage lymphatique manuel (DLM) à Fribourg. Séances douces et rythmées pour soutenir le flux lymphatique, apaiser les tensions et favoriser une sensation de légèreté. Prendre rendez-vous.",
+    "keywords": "drainage lymphatique manuel, DLM, Fribourg, Victoria Bersert, bien-être, œdème, rétention d'eau",
+    "siteName": "Victoria Bersert – Drainage lymphatique manuel",
+    "imageAlt": "Victoria Bersert – Drainage lymphatique manuel, Fribourg"
+  },
+
   "navBar": {
     "menu": "Menu",
     "about": "À propos",
