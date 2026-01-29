@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/websavva/elan/compare/elan-v0.1.1...elan-v0.1.2) (2026-01-29)
+
+
+### Bug Fixes
+
+* Favicon url was fixed ([45a47c7](https://github.com/websavva/elan/commit/45a47c7f020254fab011a12e6fd3eb1c12ab3b27))
+* Styles were improved ([01e22aa](https://github.com/websavva/elan/commit/01e22aa7c74e02af19060e95ab8e2d2be6312723))
+
 ## [0.1.1](https://github.com/websavva/elan/compare/elan-v0.1.0...elan-v0.1.1) (2026-01-29)
 
 
