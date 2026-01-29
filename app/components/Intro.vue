@@ -17,7 +17,7 @@
     </video>
 
     <div
-      class="relative z-10 h-full pt-50 flex flex-col items-center text-center max-md:pt-30 max-sm:px-10"
+      class="relative z-10 h-full pt-50 flex flex-col items-center text-center max-lg:pt-30 max-lg:px-10"
     >
       <Logo
         class="h-48 shrink-0 w-auto mb-4 -translate-x-10 max-xl:h-32 max-md:h-26 max-sm:h-22 max-sm:-translate-x-5"

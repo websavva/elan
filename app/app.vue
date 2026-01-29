@@ -35,6 +35,9 @@ const ogLocale = computed(() => (locale.value === 'fr' ? 'fr_CH' : 'en_CH'));
 
 useHead({
   title: seoTitle,
+  htmlAttrs: {
+    class: 'max-3xl:lg:text-[13px]'
+  },
   meta: [
     { name: 'description', content: seoDescription.value },
     { name: 'keywords', content: seoKeywords.value },
