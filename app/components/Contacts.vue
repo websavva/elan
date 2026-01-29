@@ -3,16 +3,16 @@
     id="contacts"
     title="Contacts"
   >
-    <div class="flex gap-12">
+    <div class="flex gap-12 max-2xl:flex-col">
       <GoogleMap
-        class="rounded-2xl overflow-hidden border border-secondary/20 w-[60%] aspect-video shadow-xl shadow-black/20"
+        class="rounded-2xl overflow-hidden border border-secondary/20 w-[60%] aspect-video shadow-xl shadow-black/20 max-2xl:w-full max-lg:h-80 max-xs:h-60"
       />
 
       <aside
         class="flex-1 min-w-0 min-h-[320px] rounded-2xl border border-secondary/20 overflow-hidden flex flex-col bg-primary"
       >
         <h4
-          class="text-secondary font-light text-xl sm:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20"
+          class="text-secondary font-light text-lg lg:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20 max-sm:py-4"
         >
           Contact information
         </h4>
@@ -34,17 +34,18 @@
                   ? 'noopener noreferrer'
                   : undefined
               "
-              class="flex items-center gap-5 px-8 py-6 hover:bg-secondary/5 transition-colors duration-300 w-full min-h-18"
+              class="flex items-center gap-5 px-8 py-6 max-lg:py-5 max-lg:px-5 hover:bg-secondary/5 transition-colors duration-300 w-full"
             >
               <span
-                class="flex shrink-0 w-12 h-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary/70 group-hover:bg-secondary/15 group-hover:text-secondary transition-colors duration-300"
+                class="flex shrink-0 size-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary/70 group-hover:bg-secondary/15 group-hover:text-secondary transition-colors duration-300 max-lg:size-10"
                 aria-hidden
               >
                 <Icon
                   :name="item.icon"
-                  class="text-2xl"
+                  class="text-2xl max-sm:text-lg"
                 />
               </span>
+
               <span
                 class="text-secondary font-light text-base sm:text-lg leading-relaxed group-hover:text-secondary/95 transition-colors"
               >
@@ -56,7 +57,7 @@
 
         <Button
           :href="bookingUrl"
-          class="w-full justify-center text-base sm:text-lg p-6 rounded-none rounded-bl-2xl border-br-2xl text-center"
+          class="w-full justify-center text-base sm:text-lg p-6 rounded-none rounded-bl-2xl rounded-br-2xl text-center max-sm:py-4"
         >
           Book an appointment
         </Button>

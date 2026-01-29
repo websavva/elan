@@ -1,7 +1,7 @@
 <template>
   <PageSection id="interior" title="Interior">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full items-start">
-      <aside class="w-[30%] shrink-0  overflow-hidden bg-primary">
+      <aside class="w-[30%] shrink-0  overflow-hidden bg-primary max-lg:w-full">
         <h4 class="text-secondary font-light text-xl sm:text-2xl uppercase tracking-wide py-5 border-b border-secondary/20">
           The space
         </h4>
@@ -16,8 +16,8 @@
         </div>
       </aside>
 
-      <div class="flex-1 relative rounded-2xl border border-secondary/20 overflow-hidden bg-primary shrink-0">
-        <div class="relative w-full h-140 overflow-hidden" style="aspect-ratio: 4/3;">
+      <div class="flex-1 relative max-lg:w-full rounded-2xl border border-secondary/20 overflow-hidden bg-primary shrink-0">
+        <div class="relative w-full h-140 max-2xl:h-100 max-sm:h-80 max-xs:h-auto overflow-hidden" style="aspect-ratio: 4/3;">
           <div
             v-for="(image, index) in images"
             :key="image.src"

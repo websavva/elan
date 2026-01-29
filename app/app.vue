@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-10">
     <NavBar />
 
     <Intro />
@@ -9,14 +9,15 @@
     <About />
     
     <SectionDelimiter />
-
+    
     <Interior />
     
     <SectionDelimiter />
-
+    
     <Indications />
+    
     <SectionDelimiter />
-
+    
     <Contacts />
   </div>
 </template>

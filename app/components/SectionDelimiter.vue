@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex justify-center py-12 sm:py-16 px-8" aria-hidden>
     <svg
-      class="w-full max-w-xs text-secondary/25"
+      class="w-full xs:max-w-xs text-secondary/25"
       viewBox="0 0 200 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

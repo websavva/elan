@@ -4,15 +4,14 @@
     title="Indications"
   >
     <ul
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px *:border-r *:border-secondary/20 rounded-2xl overflow-hidden"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px max-sm:*:not-last:border-b sm:*:nth-[-n+4]:border-b lg:*:nth-[-n+3]:border-b sm:*:not-nth-[2n]:border-r lg:*:not-nth-[3n]:border-r *:border-secondary/20 rounded-2xl overflow-hidden max-sm:*:first:pt-0"
     >
       <li
         v-for="(item, index) in indications"
         :key="item.title"
         :class="
           cn(
-            'group flex flex-col p-6 sm:p-8 bg-primary transition-colors duration-300 hover:bg-secondary/5',
-            { 'border-b': index < 3 },
+            'group flex flex-col lg:p-8 sm:p-6 py-10 max-xs:py-5 bg-primary transition-colors duration-300 hover:bg-secondary/5',
           )
         "
       >

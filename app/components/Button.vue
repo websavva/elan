@@ -26,7 +26,7 @@ const rootComponent = computed(() => {
 });
 
 const classes = computed(() => {
-    return cn('bg-secondary text-primary border border-transparent px-4 py-2 rounded-xl cursor-pointer hover:bg-primary hover:text-secondary transition-all duration-300 hover:border-secondary', {
+    return cn('bg-secondary text-primary border border-transparent px-4 py-2 rounded-xl cursor-pointer hover:bg-primary hover:text-secondary transition-all duration-300 hover:border-secondary max-sm:py-2', {
         'bg-transparent text-secondary border-secondary hover:bg-secondary hover:text-primary hover:border-primary': props.outline,
     }, props.class);
 })

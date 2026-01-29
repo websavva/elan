@@ -1,11 +1,11 @@
 <template>
   <section
     :id="props.id"
-    :class="cn('pb-20 px-24', props.class)"
+    :class="cn('px-24 max-lg:px-16 max-sm:px-8 max-xs:px-6', props.class)"
   >
     <Heading
       tag="h3"
-      class="text-4xl mb-10"
+      class="text-4xl mb-10 max-md:text-3xl max-sm:text-2xl"
     >
       {{ props.title }}
     </Heading>

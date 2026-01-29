@@ -7,6 +7,7 @@
   --font-family-serif: 'Noto Sans JP', 'Georgia', serif;
   --color-primary: #2e2823;
   --color-secondary: #dadace;
+  --breakpoint-xs: 30rem;
 }
 
 body {

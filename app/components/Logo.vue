@@ -25,11 +25,3 @@
     />
   </svg>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  textOnly?: boolean
-}>();
-</script>
-
-<style scoped></style>
