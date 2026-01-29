@@ -21,6 +21,15 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    build: {
+      target: [
+        'es2020',
+        'chrome90',
+        'firefox88',
+        'safari14',
+        'edge90',
+      ],
+    },
     define: {
       'process.env.BASE_URL': JSON.stringify(
         process.env.BASE_URL ?? 'http://localhost:3000',
