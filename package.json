@@ -12,9 +12,8 @@
   },
   "packageManager": "pnpm@10.24.0",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "nuxt generate",
     "preview": "nuxt preview",
     "dev:prepare": "nuxt prepare"
   },
