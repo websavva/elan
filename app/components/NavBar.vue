@@ -23,6 +23,17 @@
       />
     </button>
 
+    <!-- Desktop: horizontal nav in bar (unchanged) -->
+    <ul class="hidden lg:flex items-center gap-8 ml-auto">
+      <li
+        v-for="item in navItems"
+        :key="item.label"
+      >
+        <NuxtLink :to="item.href">{{ item.label }}</NuxtLink>
+      </li>
+    </ul>
+
+    <!-- Mobile: overlay -->
     <div
       :class="
         cn(
@@ -33,33 +44,50 @@
       @click="closeMobileMenu"
     />
 
-    <ul
+    <!-- Mobile: drawer with header, links, footer -->
+    <aside
       :class="
         cn(
-          'flex items-center gap-8 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-75 max-lg:h-full max-lg:bg-primary max-lg:text-secondary max-lg:flex-col max-lg:items-start max-lg:px-12 max-lg:py-8 max-lg:z-50 max-lg:gap-6 transition-all duration-300 max-sm:border-r max-sm:border-secondary/20',
-          { 'max-lg:-translate-x-full max-lg:opacity-0': !isMobileMenuOpen },
+          'lg:hidden fixed top-0 left-0 w-75 h-full bg-primary text-secondary z-50 flex flex-col transition-all duration-300 max-sm:border-r max-sm:border-secondary/20',
+          { '-translate-x-full opacity-0 pointer-events-none': !isMobileMenuOpen },
         )
       "
     >
-      <li
-        v-for="item in navItems"
-        :key="item.label"
-      >
-        <NuxtLink :to="item.href">{{
-          item.label
-        }}</NuxtLink>
-      </li>
-
-      <button
-        class="absolute lg:hidden top-3 right-5"
-        @click="closeMobileMenu"
-      >
-        <Icon
-          name="mdi:close"
-          class="text-2xl"
-        />
-      </button>
-    </ul>
+      <div class="flex items-center justify-between px-8 pt-8 pb-6 border-b border-secondary/15">
+        <span class="text-sm font-medium tracking-widest uppercase text-secondary/60">Menu</span>
+        <button
+          type="button"
+          class="p-1 -m-1"
+          aria-label="Close menu"
+          @click="closeMobileMenu"
+        >
+          <Icon name="mdi:close" class="text-2xl" />
+        </button>
+      </div>
+      <ul class="flex flex-col flex-1 px-8 py-8 gap-1">
+        <li
+          v-for="item in navItems"
+          :key="item.label"
+        >
+          <NuxtLink
+            :to="item.href"
+            class="block py-3.5 text-lg tracking-tight text-secondary hover:text-secondary/80 transition-colors"
+            @click="closeMobileMenu"
+          >
+            {{ item.label }}
+          </NuxtLink>
+        </li>
+      </ul>
+      <div class="px-8 py-8 border-t border-secondary/15">
+        <NuxtLink
+          to="#contacts"
+          class="inline-block text-sm font-medium text-secondary/70 hover:text-secondary transition-colors"
+          @click="closeMobileMenu"
+        >
+          Book an appointment →
+        </NuxtLink>
+      </div>
+    </aside>
   </nav>
 </template>
 

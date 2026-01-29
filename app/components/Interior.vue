@@ -34,19 +34,19 @@
         </div>
         <button
           type="button"
-          class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full border border-secondary/30 bg-primary/90 text-secondary flex items-center justify-center hover:bg-secondary/10 hover:border-secondary/50 transition-colors z-10"
+          class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full border border-secondary/30 bg-primary/90 text-secondary flex items-center justify-center hover:bg-secondary/10 hover:border-secondary/50 transition-colors z-10 cursor-pointer"
           aria-label="Previous image"
           @click="prev"
         >
-          <Icon name="mdi:chevron-left" class="w-6 h-6" />
+          <Icon name="mdi:chevron-left" class="text-3xl" />
         </button>
         <button
           type="button"
-          class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full border border-secondary/30 bg-primary/90 text-secondary flex items-center justify-center hover:bg-secondary/10 hover:border-secondary/50 transition-colors z-10"
+          class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full border border-secondary/30 bg-primary/90 text-secondary flex items-center justify-center hover:bg-secondary/10 hover:border-secondary/50 transition-colors z-10 cursor-pointer"
           aria-label="Next image"
           @click="next"
         >
-          <Icon name="mdi:chevron-right" class="w-6 h-6" />
+          <Icon name="mdi:chevron-right" class="text-3xl" />
         </button>
         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
           <button

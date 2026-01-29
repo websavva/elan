@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-
 @theme {
   --font-display: 'Noto Sans JP', 'Arial', 'sans-serif';
   --font-sans: 'Noto Sans JP', 'Arial', 'sans-serif';
@@ -12,4 +11,8 @@
 
 body {
   @apply bg-primary text-secondary;
+}
+
+html {
+  touch-action: manipulation;
 }
