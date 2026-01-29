@@ -1,10 +1,16 @@
 import { staticHead } from './configs/head';
 
+const baseURL =
+  process.env.BASE_URL ?? 'http://localhost:3000';
+
+const { pathname: basePath } = new URL(baseURL);
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   app: {
     head: staticHead,
+    baseURL: basePath,
   },
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
@@ -31,9 +37,7 @@ export default defineNuxtConfig({
       ],
     },
     define: {
-      'process.env.BASE_URL': JSON.stringify(
-        process.env.BASE_URL ?? 'http://localhost:3000',
-      ),
+      'process.env.BASE_URL': JSON.stringify(baseURL),
     },
   },
 

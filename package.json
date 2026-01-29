@@ -1,10 +1,16 @@
 {
   "name": "elan",
   "type": "module",
+  "version": "0.0.1",
   "private": true,
   "pnpm": {
     "neverBuiltDependencies": []
   },
+  "engines": {
+    "node": "24.x",
+    "pnpm": "10.24.0"
+  },
+  "packageManager": "pnpm@10.24.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

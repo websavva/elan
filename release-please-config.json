@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootsrap-sha": "c7a0a937f2c2c7d434c384fdfb082ee62c929594",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "elan"
+    }
+  }
+}
