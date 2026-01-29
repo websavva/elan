@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/websavva/elan/compare/elan-v0.1.0...elan-v0.1.1) (2026-01-29)
+
+
+### Bug Fixes
+
+* **cd:** Generate is used for build script ([70acfa7](https://github.com/websavva/elan/commit/70acfa7b1baaeb49076976a5dd00bd69e8aea5fc))
+
 ## [0.1.0](https://github.com/websavva/elan/compare/elan-v0.0.1...elan-v0.1.0) (2026-01-29)
 
 
