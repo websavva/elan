@@ -34,3 +34,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+useHead({
+  link: [{
+    rel: 'preload',
+    href: '/intro.mp4',
+    as: 'video',
+  }]
+})
+</script>
