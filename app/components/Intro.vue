@@ -33,6 +33,10 @@
         {{ $i18n.t('intro.subtitle') }}
       </h2>
 
+      <h3 class="text-md mt-2">
+        &ldquo;{{ $i18n.t('intro.punchline') }}&rdquo;
+      </h3>
+
       <p
         class="text-md mt-5 max-w-lg max-xl:text-sm max-md:max-w-110"
       >

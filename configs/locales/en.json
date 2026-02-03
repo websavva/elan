@@ -19,13 +19,20 @@
   },
 
   "intro": {
-    "subtitle": "Manual Lymphatic Drainage",
+    "subtitle": "Naturopath RME",
+    "punchline": "The right push, in the right place.",
     "description": "A gentle manual treatment to support lymphatic circulation, lighten the body and promote a feeling of harmony and lightness."
   },
 
   "about": {
     "title": "About the technique",
-    "description": "Manual Lymphatic Drainage (MLD) is a gentle, rhythmic technique that supports lymph flow, natural drainage, and a sense of lightness in the body.",
+    "description": [
+      "A naturopath specializing in lymphatic drainage, I accompany people who want to regain lightness and better body balance.",
+
+      "My approach is intuitive and precise, centered on the body’s function and respect for its rhythm. Lymphatic drainage supports circulation, reduces tension and promotes better elimination.",
+
+      "Each session is personalized, with a clear objective: to improve well-being in a lasting and concrete way."
+    ],
     "pressure": {
       "title": "Pressure",
       "description": "Light and precise—to encourage flow without compressing the vessels."
@@ -36,9 +43,9 @@
     },
     "duration": {
       "title": "Duration",
-      "description": "60 to 90 minutes; most people feel lighter and more at ease afterwards."
+      "description": "60 minutes; most people feel lighter and more at ease afterwards."
     },
-    "details": "The work follows the direction of lymphatic vessels, often starting at the neck to open the main drainage areas. The goal is to support the body’s own capacity to drain, detoxify and regenerate—with gentleness and precision."
+    "details": "The treatment follows the direction of the lymphatic vessels, starting in the neck to open the main drainage areas. The goal is to support the body's ability to drain, detoxify, and regenerate—gently and precisely."
   },
   "indications": {
     "title": "Indications",
@@ -53,7 +60,7 @@
       },
       {
         "title": "Edema",
-        "description": "Careful, targeted work to support circulation and comfort in affected areas."
+        "description": "Careful and targeted work to support traffic flow and comfort in the affected areas."
       },
       {
         "title": "Fatigue, stress",

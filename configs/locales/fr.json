@@ -14,18 +14,25 @@
     "menu": "Menu",
     "about": "À propos",
     "indications": "Indications",
-    "interior": "Intérieur",
+    "interior": "Espace",
     "contacts": "Contacts"
   },
 
   "intro": {
-    "subtitle": "Drainage lymphatique manuel",
+    "subtitle": "Naturopathe RME",
+    "punchline": "L’élan juste, au bon endroit.",
     "description": "Un soin manuel doux pour soutenir la circulation lymphatique, alléger le corps et favoriser une sensation d’harmonie et de légèreté"
   },
 
   "about": {
     "title": "À propos de la technique",
-    "description": "Le Drainage lymphatique manuel (DLM) est une technique manuelle douce et rythmée qui soutient le flux lymphatique, la drainage naturel et une sensation de légèreté dans le corps.",
+    "description": [
+      "Thérapeute naturopathe spécialisée en drainage lymphatique, j’accompagne les personnes qui souhaitent retrouver plus de légèreté et un meilleur équilibre corporel.",
+
+      "Mon approche est intuitive et précise, centrée sur le fonctionnement du corps et le respect de son rythme. Le drainage lymphatique permet de soutenir la circulation, de réduire les tensions et de favoriser une meilleure élimination.",
+
+      "Chaque accompagnement est personnalisé, avec un objectif clair : améliorer le bien-être de manière durable et concrète."
+    ],
     "pressure": {
       "title": "Pression",
       "description": "Légère et précise—pour encourager le flux sans compresser les vaisseaux."
@@ -36,9 +43,9 @@
     },
     "duration": {
       "title": "Durée",
-      "description": "60 à 90 minutes; la plupart des gens se sentent plus légers et plus en confiance après la séance."
+      "description": "60 minutes; la plupart des gens se sentent plus légers et plus en confiance après la séance."
     },
-    "details": "Le travail suit la direction des vaisseaux lymphatiques, souvent en commençant au cou pour ouvrir les zones de drainage principales. L’objectif est de soutenir la capacité du corps à drainer, détoxifier et se régénérer—avec douceur et précision."
+    "details": "Le travail suit la direction des vaisseaux lymphatiques, en commençant par le cou pour ouvrir les zones de drainage principales. L’objectif est de soutenir la capacité du corps à drainer, détoxifier et se régénérer—avec douceur et précision."
   },
 
   "indications": {
@@ -53,8 +60,8 @@
         "description": "Stimulation du flux lymphatique pour favoriser le drainage naturel et réduire la rétention d’eau."
       },
       {
-        "title": "Edème",
-        "description": "Travail soigneux et ciblé pour soutenir la circulation et le confort dans les zones concernées."
+        "title": "Oedème",
+        "description": "ravail soigneux et ciblé pour soutenir la circulation et le confort dans les zones concernées."
       },
       {
         "title": "Fatigue, stress",
@@ -78,8 +85,8 @@
   },
 
   "interior": {
-    "title": "Intérieur",
-    "spaceTitle": "Le lieu",
+    "title": "Espace",
+    "spaceTitle": "Le Cabinet",
     "paragraph1": "Les séances ont lieu à l’Espace Anahata à Fribourg—un environnement calme et discret conçu pour le repos et la récupération.",
     "paragraph2": "La salle de soin est maintenue propre et au calme pour que vous puissiez vous laisser aller. La lumière naturelle et un cadre neutre contribuent à une sensation de bien-être dès votre arrivée."
   }

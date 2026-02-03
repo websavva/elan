@@ -7,9 +7,11 @@
     <div class="w-full lg:-mx-8">
       <div class="lg:px-8 max-w-400">
         <p
-          class="text-secondary text-2xl font-light leading-[1.7] w-full max-w-none mb-16 max-lg:text-xl max-lg:mb-12 max-sm:text-base max-sm:mb-5"
+          v-for="item in $i18n.t('about.description')"
+          :key="item"
+          class="text-secondary text-xl font-light leading-[1.7] w-full max-w-none mb-12 max-lg:text-xl max-lg:mb-12 max-sm:text-base max-sm:mb-5"
         >
-          {{ $i18n.t('about.description') }}
+          {{ item }}
         </p>
       </div>
 
