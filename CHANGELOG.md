@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/websavva/elan/compare/elan-v0.2.0...elan-v0.2.1) (2026-02-04)
+
+
+### Bug Fixes
+
+* Typo was fixed ([e5fe6bd](https://github.com/websavva/elan/commit/e5fe6bdf7c678853137e0419b154fa332353cb9c))
+
 ## [0.2.0](https://github.com/websavva/elan/compare/elan-v0.1.2...elan-v0.2.0) (2026-02-04)
 
 
