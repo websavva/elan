@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/websavva/elan/compare/elan-v0.2.1...elan-v0.2.2) (2026-02-04)
+
+
+### Bug Fixes
+
+* Email was removed ([73eb65c](https://github.com/websavva/elan/commit/73eb65cbb408b510be7490e4952758fd5da7ba1d))
+
 ## [0.2.1](https://github.com/websavva/elan/compare/elan-v0.2.0...elan-v0.2.1) (2026-02-04)
 
 
