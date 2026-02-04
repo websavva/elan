@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/websavva/elan/compare/elan-v0.1.2...elan-v0.2.0) (2026-02-04)
+
+
+### Features
+
+* CNAME file was added for domain verification ([b94a1d5](https://github.com/websavva/elan/commit/b94a1d5b17d5e12730886a8e5e5489c4bca433de))
+
 ## [0.1.2](https://github.com/websavva/elan/compare/elan-v0.1.1...elan-v0.1.2) (2026-01-29)
 
 
