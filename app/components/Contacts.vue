@@ -9,20 +9,21 @@
       />
 
       <aside
-        class="flex-1 min-w-0 min-h-[320px] rounded-2xl border border-secondary/20 overflow-hidden flex flex-col bg-primary"
+        class="flex-1 min-w-0 rounded-2xl border border-secondary/20 overflow-hidden flex flex-col bg-primary 2xl:self-start"
       >
         <h4
           class="text-secondary font-light text-lg lg:text-2xl uppercase tracking-wide px-8 py-6 border-b border-secondary/20 max-sm:py-4"
         >
           {{ $i18n.t('contacts.infoTitle') }}
         </h4>
+
         <ul
-          class="flex flex-col divide-y divide-secondary/15 flex-1"
+          class="flex flex-col divide-y divide-secondary/15"
         >
           <li
             v-for="(item, index) in contactInfoItems"
             :key="index"
-            class="group flex-1 flex min-h-0"
+            class="group flex min-h-0 py-5"
           >
             <a
               :href="item.href"
@@ -78,15 +79,19 @@ const { t } = useI18n();
 const bookingUrl = 'mailto:info@example.com';
 
 const contactConfig = [
-  { icon: 'mdi:location-on', href: 'https://maps.app.goo.gl/8LZopCp3bvACvpQR7' },
+  {
+    icon: 'mdi:location-on',
+    href: 'https://maps.app.goo.gl/8LZopCp3bvACvpQR7',
+  },
   { icon: 'mdi:phone', href: 'tel:+41782160386' },
-  { icon: 'mdi:mail', href: 'mailto:info@example.com' },
 ];
 
 const contactInfoItems = computed(() =>
   contactConfig.map((item, i) => ({
     ...item,
-    value: (t('contacts.items') as { value: string }[])[i]?.value ?? '',
+    value:
+      (t('contacts.items') as { value: string }[])[i]
+        ?.value ?? '',
   })),
 );
 </script>
