@@ -10,10 +10,6 @@
 
     <SectionDelimiter />
 
-    <Interior />
-
-    <SectionDelimiter />
-
     <Indications />
 
     <SectionDelimiter />

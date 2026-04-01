@@ -81,7 +81,7 @@ const bookingUrl = 'mailto:info@example.com';
 const contactConfig = [
   {
     icon: 'mdi:location-on',
-    href: 'https://maps.app.goo.gl/8LZopCp3bvACvpQR7',
+    href: 'https://maps.app.goo.gl/jBBqLTCj3UuXoekr9',
   },
   { icon: 'mdi:phone', href: 'tel:+41782160386' },
 ];
