@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/websavva/elan/compare/elan-v0.2.2...elan-v0.2.3) (2026-04-01)
+
+
+### Bug Fixes
+
+* Location was updated ([296674f](https://github.com/websavva/elan/commit/296674f812114cdfd31fdf4252dc3f8ccd6d46fe))
+
 ## [0.2.2](https://github.com/websavva/elan/compare/elan-v0.2.1...elan-v0.2.2) (2026-02-04)
 
 
